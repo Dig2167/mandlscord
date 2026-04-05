@@ -1,0 +1,36 @@
+{
+  "name": "Mandlscord",
+  "short_name": "Mandlscord",
+  "description": "Современный мессенджер с голосовыми и видео звонками",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f23",
+  "theme_color": "#6C5CE7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["social", "communication"],
+  "screenshots": [],
+  "share_target": {
+    "action": "/",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "media",
+          "accept": ["image/*", "video/*"]
+        }
+      ]
+    }
+  }
+}
